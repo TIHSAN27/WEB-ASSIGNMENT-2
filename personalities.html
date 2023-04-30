@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assigment 02</title>
+</head>
+<body>    <nav>
+    <div class="logo">
+        <a href="index.html">Taimoor</a>
+    </div>
+    <ul id="list">
+        <li class="active">
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="personalities.html">Personalities</a>
+        </li>
+        <li>
+            <a href="cities.html">Cities</a>
+        </li>
+        <li>
+            <a href="spots.html">Tourist spots</a>
+        </li>
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+    </ul>
+    <img src="01.png" alt="not found" width="20px" id="toggle" onclick>
+</nav>
+
+
+    <main>
+        <div class="p">
+            <div class="main">
+                <h1>Albert Einstein</h1>
+                <h2>(1879-1955)</h2>
+                <p> A theoretical physicist who is widely regarded as one of the most influential scientists of the 20th century. He is known for his groundbreaking work on the theory of relativity and his famous equation, E=mc².
+                </p>
+                <button type="text" class="actBg">Learn More</button>
+            </div>
+            <div class="pimg">
+                    <img src="p1.png" alt="" width="200px">       
+                    </div>
+            </div>
+              
+        <div class="p">
+            <div class="pimg">
+                <img src="p1.png" alt="" width="200px">       
+                </div>
+        
+            <div class="main">
+                <h1>Bill Gates</h1>
+                <h2>(Born in 1955)</h2>
+                <p>An American entrepreneur and philanthropist who co-founded Microsoft Corporation, one of the world's largest software companies. He is also known for his contributions to the development of personal computing and for his philanthropic work through the Bill & Melinda Gates Foundation.
+                </p>
+                <button type="text" class="actBg">Learn More</button>
+                
+            </div>
+        </div>
+
+        
+    </main>
+    <footer>
+        <h1>Don't give up.</h1>
+        <h2><span>"</span>The beginning is <br>Always the hardest<span>"</span></h2>
+       <div class="up_btn">
+        <a href="#two"><img src="09.png" alt=""></a>
+ </div>
+ <div class="foot">
+    <div class="logo">Taimoor</div>
+    <div class="social">
+        <img src="s1.png" alt="">
+        <img src="s2.png" alt="">
+        <img src="s3.png" alt="">
+        <img src="s4.png" alt="">
+    </div>
+    <p>© All copy writes are reserved by Muhammad Kamran 2023</p>
+ </div>
+ <div class="up_btn">
+    <a href="#two"><img src="09.png" alt=""></a>
+</div>
+    </footer>
+
+
+    <script>
+        let bool  = true;
+        const toggle = document.getElementById('toggle'); // Remove '#' from id selector
+        const list = document.getElementById('list');
+        const body = document.getElementsByTagName('body');
+        // console.log(body);
+        // console.log(toggle);
+        // console.log(list);
+
+        // toggle.style.width = '40px';
+        toggle.onclick= ()=>{
+            if(bool){
+                toggle.setAttribute("src", "02.png");
+                list.style.right = '0';
+                bool = false;
+                body.style.filter = 'blur(5px)'
+            }
+            else{
+                toggle.setAttribute("src", "01.png");
+                list.style.right = '-100%'
+                bool = true;
+            }
+        } 
+      </script>
+</body>
+</html>
